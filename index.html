@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Recepie App</title>
+  </head>
+  <body>
+    <header>
+      <img src="" alt="Linas logo" class="logo" />
+      <!-- <nav>
+        <a href="#">Login</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+        <img src="img/icon-bag.svg" alt="cart">
+    </nav> -->
+    </header>
+    <main>
+      <div>
+        <ul id="recipes">
+          <li class="list-item">
+            <p class="list-item-title">Title</p>
+            <p class="list-item-rating">Rating 5</p>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+
+          </li>
+        </ul>
+      </div>
+      
+      <div>
+        <div class="inner-container-row">
+          <img src="" alt="" />
+          
+          <div>
+            <h3>Ingredients</h3>
+            <p id="display-ingredients"></p>
+          </div>
+        </div>
+        
+        <div class="inner-container-col">
+          <h3 id="display-title">Title</h3>
+          <button>Up vote!</button>
+          <p id="display-description">Description</p>
+        </div>
+
+      </div>
+
+      <form id="form">
+        <label for="recipe-title">Title</label>
+        <input
+          type="text"
+          id="recipe-title"
+          placeholder="Title of the recipie"
+        />
+        <label for="ingredients">Ingredients</label>
+        <input
+          type="text"
+          id="ingredients"
+          placeholder="Comma seperated ingredients"
+        />
+        <label for="instructions">Instructions:</label>
+        <input type="text" id="instructions" placeholder="Enter instructions" />
+        <label for="image">Image name:</label>
+        <input type="text" id="image" placeholder="Name of the image file" />
+        <button type="submit" id="new-recipe-button">submit</button>
+      </form>
+    </main>
+  </body>
+</html>
