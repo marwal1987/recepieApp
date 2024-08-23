@@ -1,16 +1,16 @@
+let idCount = 2;
+
+const recipeListData = [
+	{
+		id: 1,
+		title: "Meatballs and potatoes",
+		ingredients: "Meatballs, potatoes",
+		instructions: "Fry the meatballs and potatoes.",
+		image: "potatis-köttbullar",
+	},
+];
+
 // --- Viktors event listener och dom manipulation ---
-
-// let idCount = 2;
-
-// const recipeListData = [
-// 	{
-// 		id: 1,
-// 		title: "Meatballs and potatoes",
-// 		ingredients: "Meatballs, potatoes",
-// 		instructions: "Fry the meatballs and potatoes.",
-// 		image: "potatis-köttbullar",
-// 	},
-// ];
 
 // const form = document.getElementById("form");
 
