@@ -3,11 +3,36 @@ let idCount = 2;
 const recipeListData = [
 	{
 		id: 1,
-		title: "Meatballs and potatoes",
-		ingredients: "Meatballs, potatoes",
-		instructions: "Fry the meatballs and potatoes.",
-		image: "potatis-köttbullar",
+		title: "Fried Meatballs and Potatoes",
+		ingredients: "Meatballs, potatoes, salt, pepper, oil",
+		instructions:
+			"Heat oil in a frying pan over medium heat and fry the meatballs until they are browned and cooked through, turning occasionally. In the same pan, add more oil if needed, and fry the potatoes until golden and crispy.",
+		image: "meatballs-potatoes",
 	},
+	{
+		id: 2,
+		title: "Spaghetti Carbonara",
+		ingredients: "Spaghetti, eggs, pancetta, Parmesan cheese, black pepper",
+		instructions:
+			"Cook spaghetti. Fry pancetta until crisp. Mix eggs and cheese in a bowl. Combine everything and season with black pepper.",
+		image: "spaghetti-carbonara",
+	},
+	{
+		id: 3,
+		title: "Chicken Caesar Salad",
+		ingredients: "Chicken breast, Romaine lettuce, Caesar dressing, croutons, Parmesan cheese",
+		instructions:
+			"Grill the chicken, slice it. Toss Romaine lettuce with Caesar dressing. Top with chicken, croutons, and Parmesan cheese.",
+		image: "caesar-salad",
+	},
+	{
+		id: 4,
+		title: "Tacos al Pastor",
+		ingredients: "Pork, pineapple, corn tortillas, onion, cilantro, lime",
+		instructions:
+			"Marinate pork in spices, cook with pineapple. Serve on corn tortillas with onion, cilantro, and lime.",
+		image: "tacos-al-pastor",
+	}
 ];
 
 // --- Viktors event listener och dom manipulation ---
