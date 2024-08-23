@@ -48,24 +48,27 @@
       </div>
 
       <form id="form">
-        <label for="recipe-title">Title</label>
+        <label for="input-title">Title</label>
         <input
           type="text"
-          id="recipe-title"
+          id="input-title"
           placeholder="Title of the recipie"
         />
-        <label for="ingredients">Ingredients</label>
+        <label for="input-ingredients">Ingredients</label>
         <input
           type="text"
-          id="ingredients"
+          id="input-ingredients"
           placeholder="Comma seperated ingredients"
         />
-        <label for="instructions">Instructions:</label>
-        <input type="text" id="instructions" placeholder="Enter instructions" />
-        <label for="image">Image name:</label>
-        <input type="text" id="image" placeholder="Name of the image file" />
+        <label for="input-instructions">Instructions:</label>
+        <input type="text" id="input-instructions" placeholder="Enter instructions" />
+        <label for="input-image">Image name:</label>
+        <input type="text" id="input-image" placeholder="Name of the image file" />
         <button type="submit" id="new-recipe-button">submit</button>
+        <small id="input-warning"></small>
       </form>
+      
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
