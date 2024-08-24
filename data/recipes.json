@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "title": "Fried Meatballs and Potatoes",
+        "ingredients": "Meatballs, potatoes, salt, pepper, oil",
+        "instructions": "Heat oil in a frying pan over medium heat and fry the meatballs until they are browned and cooked through, turning occasionally. In the same pan, add more oil if needed, and fry the potatoes until golden and crispy.",
+        "image": "meatballs-potatoes",
+        "votes": []
+    },
+    {
+        "id": 2,
+        "title": "Spaghetti Carbonara",
+        "ingredients": "Spaghetti, eggs, pancetta, Parmesan cheese, black pepper",
+        "instructions": "Cook spaghetti. Fry pancetta until crisp. Mix eggs and cheese in a bowl. Combine everything and season with black pepper.",
+        "image": "spaghetti-carbonara",
+        "votes": []
+    },
+    {
+        "id": 3,
+        "title": "Chicken Caesar Salad",
+        "ingredients": "Chicken breast, Romaine lettuce, Caesar dressing, croutons, Parmesan cheese",
+        "instructions": "Grill the chicken, slice it. Toss Romaine lettuce with Caesar dressing. Top with chicken, croutons, and Parmesan cheese.",
+        "image": "caesar-salad",
+        "votes": []
+    },
+    {
+        "id": 4,
+        "title": "Tacos al Pastor",
+        "ingredients": "Pork, pineapple, corn tortillas, onion, cilantro, lime",
+        "instructions": "Marinate pork in spices, cook with pineapple. Serve on corn tortillas with onion, cilantro, and lime.",
+        "image": "tacos-al-pastor",
+        "votes": []
+    },
+    {
+        "id": 5,
+        "title": "Beef Stroganoff",
+        "ingredients": "Beef, onions, mushrooms, sour cream, butter, flour, beef broth, salt, pepper",
+        "instructions": "Cook beef in a skillet until browned. Remove from pan and sauté onions and mushrooms. Add butter and flour to make a roux, then stir in beef broth. Add beef back in, stir in sour cream, and simmer until thickened.",
+        "image": "image-5",
+        "votes": []
+    },
+    {
+        "id": 6,
+        "title": "Vegetable Stir Fry",
+        "ingredients": "Broccoli, bell peppers, carrots, soy sauce, garlic, ginger, sesame oil, tofu (optional)",
+        "instructions": "Heat sesame oil in a wok. Stir-fry garlic and ginger, then add vegetables. Add soy sauce and stir-fry until vegetables are tender. Add tofu if desired.",
+        "image": "image-6",
+        "votes": []
+    },
+    {
+        "id": 7,
+        "title": "Shrimp Scampi",
+        "ingredients": "Shrimp, garlic, butter, lemon juice, white wine, parsley, salt, pepper, linguine pasta",
+        "instructions": "Cook shrimp in butter with garlic until pink. Add white wine, lemon juice, and seasonings, then simmer. Toss with cooked linguine and top with parsley.",
+        "image": "image-7",
+        "votes": []
+    }
+]

@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --width: 1024px;
+}
+
+* {
+  font-family: "Work Sans", sans-serif;
 }
 
 body {
@@ -53,6 +59,7 @@ h3 {
     max-height: 500px;
     overflow-y: scroll;
     border: solid 1px #e4e4e4;
+    background-color: #bb0005;
 }
 .right {
     width: 70%;
@@ -64,9 +71,7 @@ h3 {
     display: flex;
     gap: 5px;
 }
-.rc-info{
 
-}
 .rc-img {
   width: 50%;
 }
@@ -80,6 +85,9 @@ h3 {
 ul#recipes {
     list-style: none;
     padding-inline-start: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
 li.list-item {
     cursor: pointer;
@@ -112,15 +120,20 @@ p.list-item-rating {
     margin: 6px 0px;
     font-weight: 600;
 }
+
+.list-item-image {
+  border-radius: 60%;
+  border: 1px solid white;
+}
 .list-cont {
     padding-left: 10px;
 }
 a.logo {
     font-size: 25px;
-    color: black;
     font-weight: 800;
     text-decoration: auto;
     font-variant: small-caps;
+    font-family: "Bungee Tint", sans-serif;
 }
 span.star {
     font-size: 20px;
@@ -215,4 +228,11 @@ span.star:hover {
 }
 .addnew h2 {
     padding-left: 20px;
+}
+
+.recipe-header {
+  color: white;
+  font-variant: small-caps;
+  font-size: 20px;
+  margin-left: 20px;
 }
