@@ -35,6 +35,33 @@ const recipeListData = [
 			"Marinate pork in spices, cook with pineapple. Serve on corn tortillas with onion, cilantro, and lime.",
 		image: "tacos-al-pastor",
 		votes: [],
+  },
+  {
+		id: 5,
+		title: "Beef Stroganoff",
+		ingredients: "Beef, onions, mushrooms, sour cream, butter, flour, beef broth, salt, pepper",
+		instructions:
+			"Cook beef in a skillet until browned. Remove from pan and sauté onions and mushrooms. Add butter and flour to make a roux, then stir in beef broth. Add beef back in, stir in sour cream, and simmer until thickened.",
+		image: "image-5",
+		votes: [],
+	},
+	{
+		id: 6,
+		title: "Vegetable Stir Fry",
+		ingredients: "Broccoli, bell peppers, carrots, soy sauce, garlic, ginger, sesame oil, tofu (optional)",
+		instructions:
+			"Heat sesame oil in a wok. Stir-fry garlic and ginger, then add vegetables. Add soy sauce and stir-fry until vegetables are tender. Add tofu if desired.",
+		image: "image-6",
+		votes: [],
+	},
+	{
+		id: 7,
+		title: "Shrimp Scampi",
+		ingredients: "Shrimp, garlic, butter, lemon juice, white wine, parsley, salt, pepper, linguine pasta",
+		instructions:
+			"Cook shrimp in butter with garlic until pink. Add white wine, lemon juice, and seasonings, then simmer. Toss with cooked linguine and top with parsley.",
+		image: "image-7",
+		votes: [],
 	},
 ];
 
@@ -136,16 +163,31 @@ function displayRecipeInList(recipe) {
   const totalVotes = recipe.votes?.length || 0;  
 
   listItem.innerHTML = `
-      <p class="list-item-title">${recipe.title}</p>
-      <p class="list-item-rating">Rating: ${averageRating} (${totalVotes} votes)</p>
-      <button class="edit-btn">Edit</button>
-      <button class="delete-btn">Delete</button>
+      <div class="recipe-list">
+        <div>
+          <img src="images/${recipe.image}.png" alt="${recipe.title}" class="list-item-image">
+        </div>
+        <div class="list-cont">
+          <h3 class="list-item-title">${recipe.title}</h3>
+          <p class="list-item-rating">Rating: ${averageRating}</p>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+        </div>
+      <div>
   `;
   recipeList.appendChild(listItem);
 
-  // Add click event to show recipe details
-  listItem.addEventListener("click", function() {
-      displayRecipeDetails(recipe);
+  // Add click event to show recipe details and set active class
+  listItem.addEventListener("click", function () {
+    // Remove the active class from all list items (ozay)
+    const allListItems = document.querySelectorAll(".list-item");
+    allListItems.forEach(item => item.classList.remove("active"));
+
+    // Add the active class to the clicked item (ozay)
+    listItem.classList.add("active");
+
+    // Display the recipe details
+    displayRecipeDetails(recipe);
   });
 }
 
@@ -223,8 +265,9 @@ function calculateAverageRating(recipe) {
 }
 
 
-
+// TODO: Rating system - Özay
 // TODO: Basic styling - Özay
+// TODO: Add active class recipes list - Özay
 
 // TODO: Add more recipes in mockdata - Viktor
 
