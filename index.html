@@ -8,50 +8,58 @@
   </head>
   <body>
     <header>
-      <img src="" alt="Linas logo" class="logo" />
-      <!-- <nav>
-        <a href="#">Login</a>
-        <a href="#">Products</a>
+      
+      <a class="logo" href="#" alt="logo">Recepie</a>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#addnew">Add new</a>
         <a href="#">Contact</a>
-        <img src="img/icon-bag.svg" alt="cart">
-    </nav> -->
+    </nav>
     </header>
     <main>
-      <div>
-        <ul id="recipes">
-          <!-- <li class="list-item">
-            <p class="list-item-title">Title</p>
-            <p class="list-item-rating">Rating 5</p>
-            <button class="edit-btn">Edit</button>
-            <button class="delete-btn">Delete</button>
+      <div class="main-content">
+        <div class="left">
+          <ul id="recipes">
+            <!-- <li class="list-item">
+              <p class="list-item-title">Title</p>
+              <p class="list-item-rating">Rating 5</p>
+              <button class="edit-btn">Edit</button>
+              <button class="delete-btn">Delete</button>
 
-          </li> -->
-        </ul>
-      </div>
-      
-      <div>
-        <div class="inner-container-row">
-          <img class="rc-img"/>
-          
-          <div>
-            <h3>Ingredients</h3>
-            <p id="display-ingredients"></p>
-          </div>
+            </li> -->
+          </ul>
         </div>
         
-        <div class="inner-container-col">
-          <h3 id="display-title">Title</h3>
-          <!-- <button>Up vote!</button> -->
-           <!-- Stars and rating code start ozay -->
-            <div id="rating-container">
+        <div class="right">
+          
+          <div class="inner-container-row">
+            <div class="inner-left">
+              <div class="rc-header">
+                <h1 id="display-title">Title</h1>            
+              </div>
+              <!-- Stars and rating code start ozay -->
+              <div id="rating-container">
+              </div>
+              <!-- Stars and rating code end ozay -->
+              <div class="rc-info">
+                <h3>Ingredients</h3>
+                <p id="display-ingredients"></p>
+              </div>
+              <div>
+                <h3>Instructions</h3>
+                <p id="display-instructions">instructions</p>
+              </div>
             </div>
-            <!-- Stars and rating code end ozay -->
-          <p id="display-instructions">instructions</p>
+            <div class="rc-img">
+              <img/>            
+            </div>
+          </div>
+
         </div>
-
       </div>
-
-      <form id="form">
+      <div class="addnew" id="addnew">
+        <h2>Add new recipe</h2>
+        <form id="form">
         <label for="input-title">Title</label>
         <input
           type="text"
@@ -67,10 +75,13 @@
         <label for="input-instructions">Instructions:</label>
         <input type="text" id="input-instructions" placeholder="Enter instructions" />
         <label for="input-image">Image name:</label>
-        <input type="text" id="input-image" placeholder="Name of the image file" />
-        <button type="submit" id="new-recipe-button">submit</button>
+        <input type="text" id="input-image" placeholder="image-5, image-6" />
+        <button type="submit" id="new-recipe-button">Add now!</button>
         <small id="input-warning"></small>
       </form>
+      </div>
+
+      
       
     </main>
     <script src="main.js"></script>
