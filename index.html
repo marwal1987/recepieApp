@@ -4,43 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Recipes App</title>
+    <title>Linas Recipes</title>
   </head>
   <body>
     <header>
-      
       <a class="logo" href="#" alt="logo">linas recipes</a>
       <nav>
         <a href="#">Home</a>
         <a href="#addnew">Add new</a>
         <a href="#">Contact</a>
-    </nav>
+      </nav>
     </header>
     <main>
       <div class="main-content">
         <div class="left">
           <h3 class="recipe-header">recipes</h3>
-          <ul id="recipes">
-            <!-- <li class="list-item">
-              <p class="list-item-title">Title</p>
-              <p class="list-item-rating">Rating 5</p>
-              <button class="edit-btn">Edit</button>
-              <button class="delete-btn">Delete</button>
-
-            </li> -->
-          </ul>
+          <ul id="recipes"></ul>
         </div>
-        
+
         <div class="right">
-          
           <div class="inner-container-row">
             <div class="inner-left">
               <div class="rc-header">
-                <h1 id="display-title">Title</h1>            
+                <h1 id="display-title">Title</h1>
               </div>
               <!-- Stars and rating code start ozay -->
-              <div id="rating-container">
-              </div>
+              <div id="rating-container"></div>
               <!-- Stars and rating code end ozay -->
               <div class="rc-info">
                 <h3>Ingredients</h3>
@@ -52,40 +41,41 @@
               </div>
             </div>
             <div class="rc-img">
-              <img/>            
+              <img />
             </div>
           </div>
-
         </div>
       </div>
       <div class="addnew" id="addnew">
         <h2>Add new recipe</h2>
         <form id="form">
-        <label for="input-title">Title</label>
-        <input
-          type="text"
-          id="input-title"
-          placeholder="Title of the recipie"
-        />
-        <label for="input-ingredients">Ingredients</label>
-        <input
-          type="text"
-          id="input-ingredients"
-          placeholder="Comma seperated ingredients"
-        />
-        <label for="input-instructions">Instructions:</label>
-        <input type="text" id="input-instructions" placeholder="Enter instructions" />
-        <label for="input-image">Image name:</label>
-        <input type="text" id="input-image" placeholder="image-5, image-6" />
-        <button type="submit" id="new-recipe-button">Add now!</button>
-        <small id="input-warning"></small>
-      </form>
+          <label for="input-title">Title</label>
+          <input
+            type="text"
+            id="input-title"
+            placeholder="Title of the recipie"
+          />
+          <label for="input-ingredients">Ingredients</label>
+          <input
+            type="text"
+            id="input-ingredients"
+            placeholder="Comma seperated ingredients"
+          />
+          <label for="input-instructions">Instructions:</label>
+          <input
+            type="text"
+            id="input-instructions"
+            placeholder="Enter instructions"
+          />
+          <label for="input-image">Image name:</label>
+          <input type="text" id="input-image" placeholder="image-5, image-6" />
+          <button type="submit" id="new-recipe-button">Add now!</button>
+          <small id="input-warning"></small>
+        </form>
       </div>
-
-      
-      
     </main>
     <script src="main.js"></script>
     <!-- <script src="özay.js"></script> -->
+    <!-- <script src="huseyin.js"></script> -->
   </body>
 </html>
